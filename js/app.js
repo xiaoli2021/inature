@@ -79,7 +79,8 @@ function start() {
     event.preventDefault();
     // TODO - get the value from the search form input and pass it to the
     // search() function (already defined in js/search.js)
-    const address = searchForm.submit.value;
+    const address = searchForm.address.value;
+    console.log("addressis :",address);
     search(address);
     console.log("TODO - call search() function with value from search form");
   };
